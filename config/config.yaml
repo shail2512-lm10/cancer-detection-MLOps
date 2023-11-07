@@ -1,0 +1,8 @@
+artifiacts_root: artifiacts
+
+
+data_ingestion:
+  root_dir: artifiacts/data_ingestion
+  source_URL: https://drive.google.com/file/d/18eF_QZvphD-vkrP_sQBXNOaV-TYnMPX-/view?usp=sharing
+  local_data_file: artifiacts/data_ingestion/data.zip
+  unzip_dir: artifiacts/data_ingestion
