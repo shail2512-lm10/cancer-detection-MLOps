@@ -1,6 +1,7 @@
 from CancerDetection import logger
 from CancerDetection.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
 from CancerDetection.pipeline.stage_02_prepare_base_model import PrepareBaseModelPipeline
+from CancerDetection.pipeline.stage_03_model_training import ModelTrainingPipeline
 
 STAGE_NAME = "Data Ingestion Stage"
 try:
@@ -20,6 +21,18 @@ try:
     obj = PrepareBaseModelPipeline()
     obj.main()
     logger.info(f"------- {STAGE_NAME} completed -------\n\nx=======x")
+except Exception as e:
+    logger.exception(e)
+    raise e
+
+
+STAGE_NAME = "Training"
+try:
+    logger.info(f"*************")
+    logger.info(f"------- {STAGE_NAME} has started --------")
+    obj = ModelTrainingPipeline()
+    obj.main()
+    logger.info(f"------- {STAGE_NAME} completed -------\n\nx==========x")
 except Exception as e:
     logger.exception(e)
     raise e
