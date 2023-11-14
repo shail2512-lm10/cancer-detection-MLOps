@@ -59,7 +59,7 @@ class Training:
         model.save(path)
 
     
-    def tarin(self):
+    def train(self):
         self.steps_per_epoch = self.train_generator.samples // self.train_generator.batch_size
         self.validation_steps = self.valid_generator.samples // self.valid_generator.batch_size
 

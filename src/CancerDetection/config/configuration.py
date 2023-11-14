@@ -36,8 +36,8 @@ class ConfigurationManager:
 
         prepare_base_model_config = PrepareBaseModelConfig(
             root_dir= Path(config.root_dir),
-            base_model= Path(config.base_model_path),
-            updated_base_model= Path(config.updated_base_model_path),
+            base_model_path= Path(config.base_model_path),
+            updated_base_model_path= Path(config.updated_base_model_path),
             params_img_size=self.params.IMAGE_SIZE,
             params_lr= self.params.LEARNING_RATE,
             params_include_top= self.params.INCLUDE_TOP,
