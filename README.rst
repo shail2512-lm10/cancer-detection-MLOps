@@ -3,6 +3,9 @@
 
 This repository contains the source code and necessary resources for a Cancer Detection MLOps project. The goal of this project is to develop and deploy a machine learning model for the early detection of cancer using medical imaging data. The project follows best practices in MLOps (Machine Learning Operations) to ensure a seamless and reproducible workflow from development to deployment.
 
+.. image:: workflow.gif
+   :alt: MLOps Workflow
+
 **1. Installation**
 ^^^^^^^^^^^^^^^^^^^^^
 Clone the repository using ``git``::
